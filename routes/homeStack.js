@@ -9,7 +9,7 @@ const screens = {
     },
     ReviewDetails: {
         screen: ReviewDetails
-    }
+    } 
 }
 
 
