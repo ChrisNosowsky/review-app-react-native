@@ -1,5 +1,4 @@
 import { createStackNavigator } from 'react-navigation-stack';
-import { createAppContainer } from 'react-navigation';
 import Home from '../screens/home';
 import ReviewDetails from '../screens/review-details';
 import Header from '../shared/header';
@@ -9,7 +8,7 @@ const screens = {
     Home: {
         screen: Home,
         navigationOptions: {
-            title: 'Movies'
+            headerTitle: () => <Header />,
         }
     },
     ReviewDetails: {
