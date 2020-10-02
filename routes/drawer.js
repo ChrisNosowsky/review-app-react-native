@@ -1,4 +1,4 @@
-import { createDrawNavigator } from 'react-navigation-drawer'
+import { createDrawerNavigator } from 'react-navigation-drawer'
 import { createAppContainer } from 'react-navigation';
 import AboutStack from './aboutStack';
 import HomeStack from './homeStack';
