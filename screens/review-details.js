@@ -1,9 +1,10 @@
 import React from 'react'
 import {StyleSheet, View, Text, Button} from 'react-native'
-import { globalStyles } from '../styles/global'
+import { globalStyles, images } from '../styles/global'
 import Card from '../shared/card';
 
 export default function ReviewDetails({ navigation }) {
+    const rating = navigation.getParam('rating');
 
     return (
         <View style={globalStyles.container}>
@@ -12,7 +13,7 @@ export default function ReviewDetails({ navigation }) {
                 <Text>{ navigation.getParam('body') }</Text>
                 <View style={styles.rating}>
                     <Text>Movie rating: </Text>
-                    <Image source={require('../assets/rating-1.png')}/>
+                    <Image source={images.ratings[rating]}/>
                 </View>
             </Card>
         </View>
@@ -21,4 +22,4 @@ export default function ReviewDetails({ navigation }) {
 
 const styles = StyleSheet.create({
     
-})
+});
