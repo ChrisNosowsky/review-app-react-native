@@ -10,7 +10,10 @@ export default function ReviewDetails({ navigation }) {
             <Card>
                 <Text>{ navigation.getParam('title') }</Text>
                 <Text>{ navigation.getParam('body') }</Text>
-                <Text>{ navigation.getParam('rating') }</Text>
+                <View style={styles.rating}>
+                    <Text>Movie rating: </Text>
+                    <Image source={require('../assets/rating-1.png')}/>
+                </View>
             </Card>
         </View>
     )
