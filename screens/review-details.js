@@ -18,3 +18,7 @@ export default function ReviewDetails({ navigation }) {
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    
+})
